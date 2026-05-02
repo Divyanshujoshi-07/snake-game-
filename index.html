@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SNAKE//</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <div class="title">SN<span>A</span>KE<span>//</span></div>
+  <div class="subtitle">v2.077 &nbsp;·&nbsp; cyber edition</div>
+</div>
+
+<div class="hud">
+  <div class="hud-item">
+    <span class="hud-label">Score</span>
+    <span class="hud-value" id="score">0</span>
+  </div>
+  <div class="hud-item">
+    <span class="hud-label">Best</span>
+    <span class="hud-value" id="best">0</span>
+  </div>
+  <div class="hud-item">
+    <span class="hud-label">Level</span>
+    <span class="hud-value" id="level">1</span>
+  </div>
+  <div class="hud-item">
+    <span class="hud-label">Speed</span>
+    <span class="hud-value" id="speed">1x</span>
+  </div>
+</div>
+
+<div class="canvas-wrap">
+  <canvas id="canvas" width="420" height="420"></canvas>
+
+  <div class="overlay" id="overlay">
+    <div class="overlay-title" id="overlay-title">SNAKE//</div>
+    <div class="overlay-msg" id="overlay-msg">Use arrow keys or WASD to move</div>
+    <div class="overlay-score" id="overlay-score" style="display:none"></div>
+    <button class="btn" id="startBtn">INITIALIZE</button>
+  </div>
+</div>
+
+<div class="controls">
+  <div class="key blank"></div>
+  <div class="key" id="key-up">▲</div>
+  <div class="key blank"></div>
+  <div class="key" id="key-left">◀</div>
+  <div class="key" id="key-down">▼</div>
+  <div class="key" id="key-right">▶</div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
